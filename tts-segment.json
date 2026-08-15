@@ -1,0 +1,26 @@
+[
+  {
+    "name": "TTS长段落分段-逐句",
+    "pattern": "([^。！？!?；;：:\\n]+?[。！？!?；;：:])",
+    "replacement": "$1\n",
+    "scope": "",
+    "scopeTitle": false,
+    "scopeContent": true,
+    "excludeScope": "",
+    "isEnabled": true,
+    "isRegex": true,
+    "timeoutMillisecond": 3000
+  },
+  {
+    "name": "TTS长段落分段-仅长句",
+    "pattern": "([^\\n]{40,}?[。！？!?；;：:])",
+    "replacement": "$1\n",
+    "scope": "",
+    "scopeTitle": false,
+    "scopeContent": true,
+    "excludeScope": "",
+    "isEnabled": false,
+    "isRegex": true,
+    "timeoutMillisecond": 3000
+  }
+]
